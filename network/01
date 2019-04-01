@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:48:21 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 11:34:22 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo "\nLa liste des noms des interfaces réseau :\n"
+echo "\nla commande : ifconfig -a | grep UP | awk '{print $1}'\n"
+echo
+printf "Lancer cette commande ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+	echo
+ifconfig -a | grep UP | awk '{print $1}'
+fi
+echo

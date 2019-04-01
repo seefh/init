@@ -1,0 +1,28 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:49:49 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 11:45:42 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo "\nTrouver chez quel hébergeur est le site de Slash16 :\n"
+
+echo AMAZON
+
+echo "\n En utilisant nslookup -q=cname slash16.org | grep mail | cut -d . -f2 permet de retrouver le nom de l'hebergeur\n"
+echo
+printf "Lancer nslookup ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+    echo
+nslookup -q=cname slash16.org | grep mail | cut -d . -f2
+fi
+echo

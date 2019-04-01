@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:50:24 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 12:40:12 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo "\nTrouvez l’IP qui vous a été assignée par le serveur dhcp :\n"
+echo "\nla commande : ifconfig en0 | grep \"inet \" | awk '{print$2}'"
+echo
+printf "Lancer cette commande ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+    echo
+ifconfig en0 | grep "inet " | awk '{print$2}'
+fi
+echo

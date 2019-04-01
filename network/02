@@ -1,0 +1,42 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/01 11:22:57 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 11:23:01 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo
+
+echo Identification des caractéristiques de l’interface Ethernet :
+echo
+
+echo a- Adresse de Broadcast :
+echo "Commande: ifconfig en0 | grep inet | tail -1 | cut -d' ' -f6"
+echo
+echo b- Adresses IP qui font partie du même sous-réseau :
+echo "Commande: arp -a | grep  -v \"^?\" | awk -F ')' '{print \$1}' | awk -F '(' '{print \$2}'"
+echo
+printf "Lancer ces commandes ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+    echo
+	echo Broadcast : 
+	ifconfig en0 | grep inet | tail -1 | cut -d' ' -f6
+ 	echo
+
+	echo Adresses dans le meme sous reseau : 
+ 	echo
+    GatewayAddr=$(netstat -nr | grep default | head -1 | awk '{print $2}') # recuperer l addresse de la passerelle
+    ping -c 1 $GatewayAddr > /dev/null 2>&1
+    arp -a | grep  -v ^? | awk -F ')' '{print $1}' |   awk -F '(' '{print $2}'
+fi
+
+echo

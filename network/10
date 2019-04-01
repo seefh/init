@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    10                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:50:06 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 11:51:07 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo "\nLes appareils réseaux entre votre poste et le domaine slash16.org :\n"
+echo "\nla commande : traceroute slash16.org\n"
+echo
+printf "Lancer cette commande ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+    echo
+traceroute slash16.org
+fi
+echo

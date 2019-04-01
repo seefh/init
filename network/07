@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:49:37 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 11:36:12 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+echo "\nInterrogez un serveur DNS externe sur le nom de domaine slash16.org\n"
+echo "\nla commande : nslookup slash16.org 8.8.8.8\n"
+echo
+printf "Lancer cette commande ? (y/n) : "
+read answer
+if [ $answer == 'y' ]
+then
+    echo
+nslookup slash16.org 8.8.8.8
+fi
+echo

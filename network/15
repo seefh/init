@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/02/26 16:51:01 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/01 14:10:44 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+printf "Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85:\n "
+echo
+printf "Rajouter la ligne ci-dessous dans le fichier /etc/hosts (en mode admin)\n"
+echo
+printf "46.19.122.85  intra.42.fr"
