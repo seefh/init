@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    17                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 18:45:18 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 18:52:41 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+une commande qui, en parallèle de la session graphique, permet de se connecter en ssh sur la machine
+
+ssh user@adresse_IP_hote_distant

@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    09                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 18:12:36 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 18:16:40 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+commande qui permet de savoir quelles personnes sont connectées sur le système 
+
+who
+users
+(formatage de sortie different)

@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 17:34:50 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 18:11:52 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Quel fichier contient les cles RSA des machines autorisees a se connecter via SSH ?
+
+Les machines autorisees a se connecter se trouvent dans le fichier ci-dessous :
+############
+si .ssh est cree 
+dans lequel on  collera le contenu de notre clé publique contenue dans le fichier ~/.ssh/id_rsa.pub 
+#############
+cat ~/.ssh/authorized_keys

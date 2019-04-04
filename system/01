@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 15:47:12 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 15:57:31 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+echo
+
+La version installée de votre Debian est dans les fichiers suivants?
+
+- /etc/debian_version
+
+- /etc/issue -> mais la precision est moindre

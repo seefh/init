@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 18:22:26 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 18:28:49 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+la taille exacte de chaque dossier de /var d’une manière humainement
+compréhensible suivi du chemin de celui-ci.
+
+du -h --max-depth=1 /var

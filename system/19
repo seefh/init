@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 18:54:59 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 19:02:46 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+- Listez les services qui se lancent automatiquement lorsque la machine boot et
+- Indiquez le nom donné à ce type de service
+
+
+
+-ls /etc/init.d/
+-Les daemons
+#################################
+service --status-all

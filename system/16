@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 18:38:23 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 18:45:08 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+un service qui permet de lancer des tâches à horaires régulières
+->cron
+
+/etc/init.d/cron 
+
+configuration avec crontab

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/03 17:10:07 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/03 17:11:54 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+fichier a modifier pour changer definitivement le nom de la machine en toto
+
+echo toto > /etc/hostname
+
+et remplacer l'ancien nom par toto dans /etc/hosts face à l’ip de la boucle locale.
+127.0.0.1 toto
