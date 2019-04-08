@@ -6,7 +6,7 @@
 #    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/03 18:54:59 by shamidan          #+#    #+#              #
-#    Updated: 2019/04/03 19:02:46 by shamidan         ###   ########.fr        #
+#    Updated: 2019/04/08 11:10:43 by shamidan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,5 @@
 
 
 
--ls /etc/init.d/
--Les daemons
-#################################
-service --status-all
+- ls /etc/init.d/
+- Les daemons
