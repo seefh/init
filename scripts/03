@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+use File::Copy;
+use POSIX qw/strftime/; 
+my $date = strftime("_%Y_%m_%d", localtime());  
+my $destination="save".$date;   
+my $repertoire = "qualite";
+my $fichier = "log";
+my $newuser = "user1";
+my $i = 0;
+my $j = 0;
+
+
+print "le script fait une sauvegerde de fichier \nIl prend en parametre le repertoire 'qualite'  qui contient un fichier 'log',
+il les copie dans un repertoire de sauvegarde en lui attibuant la date du jour.\n\n";
+print "il verifie que le fichier d'origine a le meme nombre de ligne que le fichier destinataire\n\n";
+mkdir $destination;
+copy("$repertoire/$fichier","$destination/$fichier") or die "Copy failed: $!";
+open  (F, "$repertoire/$fichier");
+
+print "\nContenu du fichier d'origine dans le repertoire \"$repertoire\" :\n";
+
+while (<F>)
+{
+	print $_;
+	$i++;
+}
+
+close F;
+
+open  (F1, "$destination/$fichier");
+print "\nContenu du fichier de destination dans le repertoire \"$destination\" :\n";
+
+while (<F1>)
+{
+	print $_;
+	$j++;
+}
+
+close F1;
+
+if ($i == $j)
+{
+	print "\nOK le nombre de lignes des 2 fichiers est equivalent : $i";
+}
+else 
+{print "NOK";}
+

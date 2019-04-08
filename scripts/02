@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/04/08 11:33:08 by shamidan          #+#    #+#              #
+#    Updated: 2019/04/08 11:33:30 by shamidan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/sh
+
+
+printf "2. Réalisez un script qui permet de supprimer un user LOGUÉ sur la machine\n\n"
+
+printf "Quel utilisateur logue voulez-vous killer ? Son login, $login : "
+{
+	read login;\
+	echo "#!/bin/sh" >> $login;\
+	sudo userdel -f $login;
+	printf "L'utilisateur $login a bien ete killed \n";
+}
