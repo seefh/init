@@ -4,15 +4,14 @@ use strict;
 use File::Copy;
 use POSIX qw/strftime/; 
 my $date = strftime("_%Y_%m_%d", localtime());  
-my $destination="save".$date;   
-my $repertoire = "qualite";
-my $fichier = "log";
-my $newuser = "user1";
+my $destination="savelog".$date;   
+my $repertoire = "LOG";
+my $fichier = "log1";
 my $i = 0;
 my $j = 0;
 
 
-print "le script fait une sauvegerde de fichier \nIl prend en parametre le repertoire 'qualite'  qui contient un fichier 'log',
+print "le script fait une sauvegerde de fichier \nIl prend en parametre le repertoire 'LOG'  qui contient un fichier 'log1',
 il les copie dans un repertoire de sauvegarde en lui attibuant la date du jour.\n\n";
 print "il verifie que le fichier d'origine a le meme nombre de ligne que le fichier destinataire\n\n";
 mkdir $destination;
@@ -42,7 +41,7 @@ close F1;
 
 if ($i == $j)
 {
-	print "\nOK le nombre de lignes des 2 fichiers est equivalent : $i";
+	print "\nOK le nombre de lignes des 2 fichiers est equivalent : $i\n";
 }
 else 
 {print "NOK";}
