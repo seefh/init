@@ -6,11 +6,17 @@
 #    By: shamidan <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/26 16:50:15 by shamidan          #+#    #+#              #
-#    Updated: 2019/04/01 12:36:41 by shamidan         ###   ########.fr        #
+#    Updated: 2019/04/09 10:30:58 by shamidan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/sh
+printf "Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel
+qui fait le lien entre vous (réseau local) et l’extérieur: \n\n"
+
 printf "
  1  10.11.254.254 (10.11.254.254)  5.299 ms  2.391 ms  0.659 ms
  2  nat-1 (10.60.1.11)  0.178 ms  0.167 ms  0.156 ms"
+
+
+ printf "L'equipement qui sert a faire le lien entre le LAN et le WAN est un routeur dont le nom est nat-1 qui a pour adresses 10.11.254.254 en privee et 10.60.1.11 publique .\n"
